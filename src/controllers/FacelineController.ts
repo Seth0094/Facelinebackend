@@ -273,7 +273,7 @@ class FacelineController extends BaseController {
     }
   };
 
-  getUserReplies = async (req: Request, res: Response): Promise<Response> => {
+    getUserReplies = async (req: Request, res: Response): Promise<Response> => {
     const { userId } = req.params;
     const authUserId = (req as AuthRequest).user._id;
     const { date } = req.query;

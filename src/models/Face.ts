@@ -10,7 +10,7 @@ const FaceSchema = new Schema<IfaceDocument>(
       maxlength: 400,
     },
     image: {
-      type: String,
+      type: [String],
       trim: true,
       default: null,
     },

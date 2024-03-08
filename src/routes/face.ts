@@ -25,7 +25,7 @@ router.post(
   FacelineController.createFace,
 );
 
-router.get('/:faceId/replies', FacelineController.getUserReplies);
+router.get('/:faceId/replies', FacelineController.getfaceReplies);
 
 router.post('/:faceId/like', FacelineController.handleLike);
 

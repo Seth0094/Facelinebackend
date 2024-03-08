@@ -13,7 +13,7 @@ router.get('/user/:userId', controllers_1.FacelineController.getUserfaces);
 router.get('/user/:userId/replies', controllers_1.FacelineController.getUserReplies);
 router.get('/user/:userId/liked', controllers_1.FacelineController.getUserLikedfaces);
 router.post('/:faceId/reply', (0, middlewares_1.validate)(zod_1.createFaceSchema), controllers_1.FacelineController.createFace);
-router.get('/:faceId/replies', controllers_1.FacelineController.getUserReplies);
+router.get('/:faceId/replies', controllers_1.FacelineController.getfaceReplies);
 router.post('/:faceId/like', controllers_1.FacelineController.handleLike);
 router
     .route('/:faceId')

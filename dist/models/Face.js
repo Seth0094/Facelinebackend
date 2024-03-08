@@ -18,7 +18,7 @@ const FaceSchema = new mongoose_1.Schema({
         maxlength: 400,
     },
     image: {
-        type: String,
+        type: [String],
         trim: true,
         default: null,
     },
