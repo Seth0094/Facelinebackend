@@ -25,7 +25,7 @@ class FacelineController extends BaseController_1.default {
             try {
                 const face = yield models_1.Face.create({
                     content,
-                    image: image !== null && image !== void 0 ? image : null,
+                    image: image !== null && image !== void 0 ? image : [],
                     userId,
                     isReplyTo: faceId !== null && faceId !== void 0 ? faceId : null,
                 });

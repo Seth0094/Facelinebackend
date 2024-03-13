@@ -13,7 +13,7 @@ class FacelineController extends BaseController {
     try {
       const face = await Face.create({
         content,
-        image: image ?? null,
+        image: image ?? [],
         userId,
         isReplyTo: faceId ?? null,
       });
@@ -66,7 +66,7 @@ class FacelineController extends BaseController {
       }
 
       face.content = content ?? face.content;
-      face.image = image ?? face.image;
+      face.image = image ?? face.image; 
       face.isEdited = true;
 
       await face.save();
